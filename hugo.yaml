@@ -1,0 +1,47 @@
+baseURL: 'https://stop2think.top/'
+languageCode: en-us
+title: q'blog
+theme: PaperMod
+taxonomies:
+  tag: tags
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 10
+    - name: Tags
+      pageRef: /tags
+      weight: 30
+    - name: Search
+      pageRef: /search
+      weight: 20
+params:
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  disableThemeToggle: false # show icon besides title of page to change theme
+  homeInfoParams:
+    Title: Hi there is why
+    Content: I need a job, plz! 
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true # adds a copy buttion in code block to copy the code it contains
+  math: true # use katex to render math
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search 
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+  highlight:
+    noClasses: false
