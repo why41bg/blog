@@ -1,7 +1,9 @@
 baseURL: 'https://stop2think.top/'
-languageCode: en-us
+languageCode: zh-cn
 title: q'blog
 theme: PaperMod
+enableEmoji: true
+enableRobotsTXT: true # allow spider
 taxonomies:
   tag: tags
 menus:
@@ -19,11 +21,14 @@ params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   disableThemeToggle: false # show icon besides title of page to change theme
   homeInfoParams:
-    Title: Hi there is why
-    Content: I need a job, plz! 
+    Title: 👋 Hi there is qwhy's blog
+    Content: I'm a chatgpt, ctrl+c, crtl+v developer.
   ShowReadingTime: true
   ShowCodeCopyButtons: true # adds a copy buttion in code block to copy the code it contains
   math: true # use katex to render math
+  socialIcons:
+    - name: github
+      url: "https://github.com/why41bg"
 outputs:
   home:
     - HTML
@@ -31,6 +36,8 @@ outputs:
     - JSON # necessary for search 
 markup:
   goldmark:
+    renderer:
+      unsafe: true
     extensions:
       passthrough:
         delimiters:
@@ -45,3 +52,4 @@ markup:
         enable: true
   highlight:
     noClasses: false
+    lineNos: true
