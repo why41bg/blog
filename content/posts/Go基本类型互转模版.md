@@ -8,6 +8,8 @@ ShowToc: true
 TocOpen: false 
 ---
 
+# Go基本类型互转模版
+
 ```go
 func intToString(a int) string {
 	return strconv.Itoa(a)
