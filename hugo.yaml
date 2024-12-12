@@ -1,6 +1,6 @@
-baseURL: 'https://stop2think.top/'
+baseURL: "https://stop2think.top/"
 languageCode: zh-cn
-title: q'blog
+title: blog
 theme: PaperMod
 enableEmoji: true
 enableRobotsTXT: true # allow spider
@@ -21,7 +21,7 @@ params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   disableThemeToggle: false # show icon besides title of page to change theme
   homeInfoParams:
-    Title: 👋 Hi there is qwhy's blog
+    Title: 👋 Hi there is weihongyu's blog
     Content: I'm a chatgpt, ctrl+c, crtl+v developer.
   ShowReadingTime: true
   ShowCodeCopyButtons: true # adds a copy buttion in code block to copy the code it contains
@@ -33,7 +33,7 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # necessary for search 
+    - JSON # necessary for search
 markup:
   goldmark:
     renderer:
@@ -42,13 +42,13 @@ markup:
       passthrough:
         delimiters:
           block:
-          - - \[
-            - \]
-          - - $$
-            - $$
+            - - \[
+              - \]
+            - - $$
+              - $$
           inline:
-          - - \(
-            - \)
+            - - \(
+              - \)
         enable: true
   highlight:
     noClasses: false
