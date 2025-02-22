@@ -81,5 +81,5 @@ http {
 
 # 我的项目
 
-我的这个项目叫做 [Aura](https://aura.stop2think.top/)，是我根据自己的需求做（定制开发）的一个笔记回忆录，目前前端静态资源是托管在 [Vercel](https://vercel.com) 上的，感兴趣的可以看看。打开 F12 后查看网络可以看到 AJAX 请求后端使用的是 HTTPS。
+~~我的这个项目叫做 [Aura](https://aura.stop2think.top/)，是我根据自己的需求做（定制开发）的一个笔记回忆录，目前前端静态资源是托管在 [Vercel](https://vercel.com) 上的，感兴趣的可以看看。打开 F12 后查看网络可以看到 AJAX 请求后端使用的是 HTTPS。~~
 
